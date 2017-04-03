@@ -1,0 +1,16 @@
+$red: #db3534;
+$dark-red: #992524;
+$green: #4f6f26;
+
+
+@import 'container';
+@import 'nav';
+@import 'header';
+@import 'sliderSection';
+@import 'about';
+@import 'footer';
+
+body {
+	margin: 0;
+	padding: 0;
+}

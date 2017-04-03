@@ -1,0 +1,12 @@
+.container{
+	width: 1170px;
+	margin: auto;
+	&-inherit{
+		height: inherit;
+	}
+	&-fluid{
+		display: flex;
+		justify-content: space-between;
+		flex-flow: row wrap;
+	}
+}

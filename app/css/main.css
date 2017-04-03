@@ -1,0 +1,291 @@
+@charset "UTF-8";
+.container {
+  width: 1170px;
+  margin: auto; }
+  .container-inherit {
+    height: inherit; }
+  .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap; }
+
+.nav {
+  width: 100%;
+  height: 45px;
+  background-color: #db3534;
+  display: flex;
+  align-items: center; }
+  .nav-left {
+    float: left;
+    display: flex;
+    height: inherit;
+    align-items: center; }
+    .nav-left .hamburger {
+      color: white; }
+      .nav-left .hamburger:hover {
+        color: #4f6f26;
+        cursor: pointer; }
+  .nav-right {
+    float: right;
+    display: flex;
+    height: inherit;
+    align-items: center; }
+    .nav-right .buy-icon {
+      float: left;
+      margin: 7px;
+      color: white; }
+      .nav-right .buy-icon:hover {
+        color: #4f6f26; }
+    .nav-right .buy-text {
+      width: 155px;
+      color: white; }
+    .nav-right .lang {
+      margin: 0 20px; }
+      .nav-right .lang button {
+        width: 30px;
+        height: 30px;
+        background-color: #992524;
+        outline: none;
+        border: none;
+        color: #db3534; }
+        .nav-right .lang button:hover {
+          color: white; }
+
+#custom-search-input {
+  width: 247px;
+  overflow: hidden;
+  margin: 0 10px 0 0;
+  padding: 0; }
+
+#custom-search-input .search-query {
+  width: 247px;
+  background-color: #992524;
+  padding-right: 3px;
+  padding-right: 4px \9;
+  padding-left: 3px;
+  padding-left: 4px \9;
+  color: white;
+  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+  margin-bottom: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px; }
+
+#custom-search-input button {
+  border: 0;
+  background: none;
+  /** belows styles are working good */
+  padding: 2px 5px;
+  margin-top: 2px;
+  position: relative;
+  left: -28px;
+  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+  margin-bottom: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #D9230F; }
+
+.search-query:focus + button {
+  z-index: 3; }
+
+.form-control:focus {
+  background-color: #4f6f26; }
+
+.header {
+  background: radial-gradient(circle at center, #92b35c, #42631b);
+  position: relative; }
+  .header .presentation {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header .presentation .contacts a {
+      text-decoration: none;
+      color: white; }
+      .header .presentation .contacts a:hover {
+        color: #992524; }
+    .header .presentation .contacts .social-container .social {
+      margin: 5px 8px;
+      font-size: 30px; }
+      .header .presentation .contacts .social-container .social:hover {
+        cursor: pointer;
+        color: #992524; }
+    .header .presentation .contacts .social-container .fa-twitter-square {
+      color: #44ccf6; }
+    .header .presentation .contacts .social-container .fa-vk {
+      color: #1463a6; }
+    .header .presentation .contacts .social-container .fa-facebook-square {
+      color: #3b5998; }
+    .header .presentation .contacts .social-container .fa-rss-square {
+      color: #f88b02; }
+    .header .presentation .contacts .social-container .fa-google-plus-square {
+      color: #d13f2d; }
+    .header .presentation .contacts .social-container .cart {
+      width: 230px;
+      border-radius: 5px;
+      background-color: #db3534;
+      padding: 10px;
+      color: white; }
+      .header .presentation .contacts .social-container .cart h3, .header .presentation .contacts .social-container .cart h5 {
+        margin: 0; }
+      .header .presentation .contacts .social-container .cart .cart-icon {
+        float: left;
+        padding: 0 20px 0 0; }
+    .header .presentation .logo img {
+      display: block;
+      margin: auto; }
+    .header .presentation .logo .nakitel {
+      width: 100%;
+      font-size: 48px;
+      font-family: "HelveticaNeue";
+      color: #608b30;
+      text-transform: uppercase;
+      line-height: 1.2;
+      text-align: center;
+      text-shadow: 0.5px 0.866px 1px rgba(255, 255, 255, 0.4); }
+    .header .presentation .telephone {
+      color: white; }
+      .header .presentation .telephone :nth-child(2) {
+        font-size: 22px; }
+      .header .presentation .telephone .callBtn {
+        width: 200px;
+        height: 76px;
+        border-radius: 5px;
+        background-color: #db3534;
+        outline: none;
+        border: none; }
+        .header .presentation .telephone .callBtn h3, .header .presentation .telephone .callBtn h4 {
+          margin: 5px 0;
+          font-weight: bold;
+          color: white; }
+  .header .doors {
+    margin: 20px 0 0 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; }
+    .header .doors figure {
+      position: relative;
+      z-index: 15;
+      text-align: center;
+      color: #4f6f26; }
+      .header .doors figure:hover img {
+        transform: rotateY(180deg);
+        transition: 1s; }
+      .header .doors figure img {
+        transition: 1s; }
+
+.sliderSection {
+  width: 100%;
+  position: relative;
+  background-color: white;
+  margin-top: -140px; }
+  .sliderSection:before {
+    content: '';
+    width: 100%;
+    height: 20px;
+    display: block;
+    z-index: 14;
+    position: relative;
+    top: -20px;
+    background-image: linear-gradient(to bottom right, transparent 50.5%, white 50.5%), linear-gradient(to bottom left, transparent 50.5%, white 50.5%);
+    /* 50.5%, иначе угол будет не острый */
+    background-repeat: repeat-x, repeat-x;
+    background-position: 10px 0, 10px 0;
+    /*  начинаем не с обрезанного угла  */
+    background-size: 20px 20px, 20px 20px; }
+  .sliderSection .slider {
+    margin-top: 170px; }
+    .sliderSection .slider img {
+      width: 100%; }
+    .sliderSection .slider .swiper-pagination {
+      top: 0; }
+      .sliderSection .slider .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px; }
+        .sliderSection .slider .swiper-pagination-bullet-active {
+          background: #db3534; }
+    .sliderSection .slider .swiper-wrapper {
+      top: 25px; }
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 15;
+  margin: 30px 0; }
+  .about h1 {
+    width: 100%;
+    text-align: center;
+    color: #4f6f26;
+    margin: 20px 0; }
+  .about_nav {
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    font-size: 12px;
+    line-height: 25px; }
+    .about_nav li {
+      list-style: none; }
+    .about_nav a {
+      text-decoration: none;
+      color: #4f6f26; }
+      .about_nav a:hover {
+        color: #db3534; }
+  .about .infoPage {
+    background-color: #f8f8f8;
+    box-shadow: 0 0 25px -3px black;
+    width: 760px;
+    padding: 30px;
+    border: 2px solid white; }
+    .about .infoPage p {
+      text-indent: 15px; }
+  .about .bannerPlace .banner1 {
+    margin: 25px 0; }
+    .about .bannerPlace .banner1 :nth-child(2) {
+      font-size: 18px; }
+    .about .bannerPlace .banner1 h4 {
+      font-size: 15px; }
+    .about .bannerPlace .banner1 .callBtn {
+      width: 170px;
+      height: 76px;
+      border-radius: 5px;
+      background-color: #db3534;
+      outline: none;
+      border: none; }
+      .about .bannerPlace .banner1 .callBtn h3, .about .bannerPlace .banner1 .callBtn h4 {
+        font-size: 15px;
+        margin: 5px 0;
+        font-weight: bold;
+        color: white; }
+  .about .bannerPlace .banner2 {
+    margin: 25px 0;
+    width: 170px; }
+    .about .bannerPlace .banner2 img {
+      width: 100%; }
+
+footer {
+  width: 100%;
+  height: 310px;
+  background: radial-gradient(circle at center, #92b35c, #42631b, #42631b);
+  position: relative;
+  z-index: 14;
+  margin-top: -120px; }
+  footer:before {
+    content: '';
+    width: 100%;
+    height: 20px;
+    display: block;
+    z-index: 14;
+    position: relative;
+    top: -20px;
+    background-image: linear-gradient(to bottom right, transparent 50.5%, #42631b 50.5%), linear-gradient(to bottom left, transparent 50.5%, #42631b 50.5%);
+    /* 50.5%, иначе угол будет не острый */
+    background-repeat: repeat-x, repeat-x;
+    background-position: 10px 0, 10px 0;
+    /*  начинаем не с обрезанного угла  */
+    background-size: 20px 20px, 20px 20px; }
+
+body {
+  margin: 0;
+  padding: 0; }

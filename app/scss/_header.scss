@@ -1,0 +1,113 @@
+.header {
+	background: radial-gradient(circle at center, #92b35c, #42631b);
+	position: relative;
+	.presentation{
+		margin: 30px 0 ;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.contacts{
+			a{
+				text-decoration: none;
+				color: white;
+				&:hover {
+					color: $dark-red;
+				}
+			}
+			.social-container{
+				.social{
+					margin: 5px 8px;
+					font-size: 30px;
+					&:hover{
+						cursor: pointer;
+						color: $dark-red;
+					}
+				}
+				.fa-twitter-square{
+					color: #44ccf6;
+				}
+				.fa-vk{
+					color: #1463a6;
+				}
+				.fa-facebook-square{
+					color: #3b5998;
+				}
+				.fa-rss-square{
+					color: #f88b02;
+				}
+				.fa-google-plus-square{
+					color: #d13f2d;
+				}
+				.cart{
+					width: 230px;
+					border-radius: 5px;
+					background-color: $red;
+					padding: 10px;
+					color: white;
+					h3, h5{
+						margin: 0;
+					}
+					.cart-icon{
+						float: left;
+						padding: 0 20px 0 0;
+					}
+				}
+			}
+		}
+		.logo {
+			img{
+				display: block;
+				margin: auto;
+			}
+			.nakitel {
+				width: 100%;
+				font-size: 48px;
+				font-family: "HelveticaNeue";
+				color: rgb(96, 139, 48);
+				text-transform: uppercase;
+				line-height: 1.2;
+				text-align: center;
+				text-shadow: 0.5px 0.866px 1px rgba(255, 255, 255, 0.4);
+			}
+		}
+		.telephone {
+			color: white;
+			:nth-child(2) {
+				font-size: 22px;
+			}
+			.callBtn {
+				width: 200px;
+				height: 76px;
+				border-radius: 5px;
+				background-color: $red;
+				outline: none;
+				border: none;
+				h3, h4 {
+					margin: 5px 0;
+					font-weight: bold;
+					color: white;
+				}
+			}
+		}
+	}
+	.doors{
+		margin: 20px 0 0 0;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		figure{
+			position: relative;
+			z-index: 15;
+			text-align: center;
+			color: $green;
+			&:hover img{
+				transform: rotateY(180deg);
+				transition: 1s;
+			}
+			img{
+				transition: 1s;
+			}
+		}
+	}
+
+}
