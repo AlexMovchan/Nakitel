@@ -1,6 +1,7 @@
 .container{
 	width: 1170px;
 	margin: auto;
+	padding: 0;
 	&-inherit{
 		height: inherit;
 	}
@@ -8,5 +9,8 @@
 		display: flex;
 		justify-content: space-between;
 		flex-flow: row wrap;
+	}
+	&-align{
+		align-items: center;
 	}
 }

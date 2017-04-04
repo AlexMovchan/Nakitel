@@ -1,6 +1,30 @@
 .header {
 	background: radial-gradient(circle at center, #92b35c, #42631b);
 	position: relative;
+	top: 45px;
+	.menuNav{
+		position: fixed;
+		z-index: 20;
+		top: 45px;
+		ul{
+			background-color: $red;
+			width: 100px;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			li{ 
+				list-style: none;
+				padding: 10px 20px;
+				&:hover{
+					background-color: black;
+				}
+				a{
+					text-decoration: none;
+					color: white;
+				}
+			}
+		}
+	}
 	.presentation{
 		margin: 30px 0 ;
 		display: flex;
@@ -18,9 +42,11 @@
 				.social{
 					margin: 5px 8px;
 					font-size: 30px;
+					transition: all .3s;
 					&:hover{
 						cursor: pointer;
-						color: $dark-red;
+						transform: scale(1.2);
+						color: white;
 					}
 				}
 				.fa-twitter-square{
@@ -63,11 +89,15 @@
 				width: 100%;
 				font-size: 48px;
 				font-family: "HelveticaNeue";
-				color: rgb(96, 139, 48);
+				color: #476724;
 				text-transform: uppercase;
 				line-height: 1.2;
 				text-align: center;
 				text-shadow: 0.5px 0.866px 1px rgba(255, 255, 255, 0.4);
+				&:hover{
+					color: $red;
+					cursor: pointer;
+				}
 			}
 		}
 		.telephone {
@@ -91,7 +121,7 @@
 		}
 	}
 	.doors{
-		margin: 20px 0 0 0;
+		margin: 80px 0 0 0;
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-between;

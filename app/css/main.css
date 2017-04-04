@@ -1,20 +1,25 @@
 @charset "UTF-8";
 .container {
   width: 1170px;
-  margin: auto; }
+  margin: auto;
+  padding: 0; }
   .container-inherit {
     height: inherit; }
   .container-fluid {
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap; }
+  .container-align {
+    align-items: center; }
 
 .nav {
   width: 100%;
   height: 45px;
   background-color: #db3534;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  position: fixed;
+  z-index: 20; }
   .nav-left {
     float: left;
     display: flex;
@@ -23,7 +28,7 @@
     .nav-left .hamburger {
       color: white; }
       .nav-left .hamburger:hover {
-        color: #4f6f26;
+        color: black;
         cursor: pointer; }
   .nav-right {
     float: right;
@@ -35,7 +40,7 @@
       margin: 7px;
       color: white; }
       .nav-right .buy-icon:hover {
-        color: #4f6f26; }
+        color: black; }
     .nav-right .buy-text {
       width: 155px;
       color: white; }
@@ -94,7 +99,26 @@
 
 .header {
   background: radial-gradient(circle at center, #92b35c, #42631b);
-  position: relative; }
+  position: relative;
+  top: 45px; }
+  .header .menuNav {
+    position: fixed;
+    z-index: 20;
+    top: 45px; }
+    .header .menuNav ul {
+      background-color: #db3534;
+      width: 100px;
+      margin: 0;
+      padding: 0;
+      text-align: center; }
+      .header .menuNav ul li {
+        list-style: none;
+        padding: 10px 20px; }
+        .header .menuNav ul li:hover {
+          background-color: black; }
+        .header .menuNav ul li a {
+          text-decoration: none;
+          color: white; }
   .header .presentation {
     margin: 30px 0;
     display: flex;
@@ -107,10 +131,12 @@
         color: #992524; }
     .header .presentation .contacts .social-container .social {
       margin: 5px 8px;
-      font-size: 30px; }
+      font-size: 30px;
+      transition: all .3s; }
       .header .presentation .contacts .social-container .social:hover {
         cursor: pointer;
-        color: #992524; }
+        transform: scale(1.2);
+        color: white; }
     .header .presentation .contacts .social-container .fa-twitter-square {
       color: #44ccf6; }
     .header .presentation .contacts .social-container .fa-vk {
@@ -139,11 +165,14 @@
       width: 100%;
       font-size: 48px;
       font-family: "HelveticaNeue";
-      color: #608b30;
+      color: #476724;
       text-transform: uppercase;
       line-height: 1.2;
       text-align: center;
       text-shadow: 0.5px 0.866px 1px rgba(255, 255, 255, 0.4); }
+      .header .presentation .logo .nakitel:hover {
+        color: #db3534;
+        cursor: pointer; }
     .header .presentation .telephone {
       color: white; }
       .header .presentation .telephone :nth-child(2) {
@@ -160,7 +189,7 @@
           font-weight: bold;
           color: white; }
   .header .doors {
-    margin: 20px 0 0 0;
+    margin: 80px 0 0 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between; }
@@ -179,7 +208,7 @@
   width: 100%;
   position: relative;
   background-color: white;
-  margin-top: -140px; }
+  margin-top: -100px; }
   .sliderSection:before {
     content: '';
     width: 100%;
@@ -264,14 +293,14 @@
     .about .bannerPlace .banner2 img {
       width: 100%; }
 
-footer {
+.footer {
   width: 100%;
   height: 310px;
   background: radial-gradient(circle at center, #92b35c, #42631b, #42631b);
   position: relative;
   z-index: 14;
   margin-top: -120px; }
-  footer:before {
+  .footer:before {
     content: '';
     width: 100%;
     height: 20px;
@@ -285,6 +314,32 @@ footer {
     background-position: 10px 0, 10px 0;
     /*  начинаем не с обрезанного угла  */
     background-size: 20px 20px, 20px 20px; }
+  .footer_nav {
+    height: 50px;
+    background-color: #c62d2e;
+    margin-top: 180px; }
+    .footer_nav-logo {
+      width: 50%; }
+      .footer_nav-logo a {
+        text-decoration: none;
+        color: #ff6666;
+        font-size: 18px;
+        font-family: "HelveticaNeue";
+        line-height: 0.95; }
+        .footer_nav-logo a:hover {
+          color: black; }
+    .footer_nav-bar ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0; }
+      .footer_nav-bar ul li {
+        margin: 0 10px; }
+        .footer_nav-bar ul li a {
+          color: white;
+          text-decoration: none; }
+          .footer_nav-bar ul li a:hover {
+            color: black; }
 
 body {
   margin: 0;
